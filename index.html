@@ -68,7 +68,7 @@
         <div class="navbar-area navbar-two">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-11">
+                    <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/logo.png" alt="Logo">
@@ -88,13 +88,13 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#event">Schedules</a>
                                     </li>
-				    <li class="nav-item active">
+									<li class="nav-item active">
                                         <a class="page-scroll" href="#recognition">Recognition Annoucement</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#gallery">Gallery</a>
                                     </li>
-   				    <li class="nav-item">
+									<li class="nav-item">
                                         <a class="page-scroll" href="#management">From the Desk of Management</a>
                                     </li>
                                 </ul>
@@ -109,10 +109,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div data-countdown="01/06/2022"></div>
+                        <div data-countdown="01/10/2022"></div>
                         
                         <div class="header-content text-center">
-                            <h2 class="header-title"><span> 6<sup>th</sup> January' 2022 </span></h2>
+                            <h2 class="header-title"><span> 10<sup>th</sup> January' 2022 </span></h2>
                             <h3 class="sub-title">Q3 Cycle Meetup - Field Force Effectivess</h3>
                         </div>  <!-- header content -->
                     </div>
@@ -131,7 +131,7 @@
                 <div class="col-lg-6">
                     <div class="about-image mt-50 wow fadeInLeft" data-wow-duration="1s">
                         <img src="assets/images/about.png" alt="About">
-                    </div> <!-- about image -->
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content mt-45 wow fadeInRight" data-wow-duration="1s">
@@ -141,11 +141,11 @@
 
                         <p class="text mt-30">We know that amazing things happen when people show up for each other and come together. The more of yourself that you give to the Meetup, the more you will get out of your relationships and opportunities</p>
 						<p class="text mt-30">Generally, it’s always a good idea to collect more perspectives for a better understanding of any given topic. Having more people in the same room, while it may seem daunting to some, is the perfect opportunity to come together and have a closer look at all that’s being discussed. There may be things you can all agree on, but the most interesting conversations are usually sparked by topics that hold different meanings and conclusions for others.</p>
-                        <p class="date"><span>06<sup>th</sup></span> January’ 22</p>
-                    </div> <!-- about content -->
+                        <!-- <p class="date"><span>06<sup>th</sup></span> January’ 22</p> -->
+                    </div> 
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div> 
+        </div> 
     </section>
 
     <!--====== ABOUT PART ENDS ======-->
@@ -210,33 +210,51 @@
     <section id="event" class="event-schedule pt-115 pb-130">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-8">
+				<div class="col-lg-12">
 					<div class="section-title text-center">
 						<h2 class="title">EVENT SCHEDULE</h2>
-						<p class="text">Q3 Cycle Meetup Schedule is as following.</p>
+						<div class="event-tab" style="border:none;">
+						<ul class="nav justify-content-between align-items-center" id="myTab" role="tablist">
+							<li class="nav-item" id="generalButton">
+								<a class="active" id="generalTabs" data-toggle="tab" href="#generalBox" role="tab" aria-controls="day-1" aria-selected="true">
+									<h4 class="nav-title">General</h4>
+								</a>
+							</li>
+							<li class="nav-item" id="crystalButton">
+								<a id="crystalTabs" data-toggle="tab" href="#crystalBox" role="tab" aria-controls="day-2" aria-selected="false">
+									<h4 class="nav-title">Crystal</h4>
+								</a>
+							</li>
+							<li class="nav-item" id="epocanButton">
+								<a id="epocanTabs" data-toggle="tab" href="#epocanBox" role="tab" aria-controls="day-3" aria-selected="false">
+									<h4 class="nav-title">Epocan</h4>
+								</a>
+							</li>
+						</ul>
+					</div> 
 					</div> 
 				</div>
 			</div> 
-			<div class="row">
+			<div class="row" id="generalBox">
 				<div class="col-lg-12">
-					<div class="event-tab mt-60">
+					<div class="event-tab">
 						<ul class="nav justify-content-between align-items-center" id="myTab" role="tablist">
 							<li class="nav-item">
 								<a class="active" id="day-1-tab" data-toggle="tab" href="#day-1" role="tab" aria-controls="day-1" aria-selected="true">
 									<h4 class="nav-title">Day 1</h4>
-									<span>06 January, 2022</span>
+									<span>10 January, 2022</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a id="day-2-tab" data-toggle="tab" href="#day-2" role="tab" aria-controls="day-2" aria-selected="false">
 									<h4 class="nav-title">Day 2</h4>
-									<span>07 January, 2022</span>
+									<span>11 January, 2022</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a id="day-3-tab" data-toggle="tab" href="#day-3" role="tab" aria-controls="day-3" aria-selected="false">
 									<h4 class="nav-title">Day 3</h4>
-									<span>08 January, 2022</span>
+									<span>12 January, 2022</span>
 								</a>
 							</li>
 						</ul>
@@ -559,13 +577,46 @@
 									</div>
 								</div>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div> 
 			</div>
-		</div> 
+		</div>
+		<div class="row" id="crystalBox">
+			<div class="col-lg-12">
+				<div class="event-tab">
+					<img style="margin-bottom:30px;" src="assets/images/CrystalAgenda1.png" alt="Crystal Agenda 1">
+					
+					<img src="assets/images/CrystalAgenda2.png" alt="Crystal Agenda 2">
+				</div>
+			</div>
+		</div>
 	</div>
     </section>
+	
+	<!-- <section id="recognition" class="about-area pb-130 pt-80"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="row align-items-center"> -->
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <div class="about-image mt-50 wow fadeInLeft" data-wow-duration="1s"> -->
+                        <!-- <h2 class="title">Recognition Announcement</h2> -->
+						<!-- <img src="assets/images/recognition.jpg" alt="About"> -->
+                    <!-- </div>  -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <div class="about-content mt-45 wow fadeInRight" data-wow-duration="1s"> -->
+                        <!-- <div class="section-title"> -->
+                        <!-- </div> -->
+
+                        <!-- <div> -->
+							
+						<!-- </div> -->
+						<!-- <a href="#" class="">View All</a> -->
+                    <!-- </div>  -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
 
     <!--====== FOOTER PART START ======-->
 
@@ -576,7 +627,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright text-center">
-                            <p class="text">Copyrights © <a href="http://macter.com/" rel="nofollow">Macter International Ltd.</a>. All Rights Reserved</p>
+                            <p class="text">Copyrights © <a href="http://macter.com/" rel="nofollow">Macter International Ltd.</a> All Rights Reserved</p>
                         </div> <!-- copyright -->
                     </div>
                 </div> <!-- row -->
@@ -626,6 +677,18 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+	
+	<script type="text/javascript">
+		$('#generalButton').click(function(){
+			$('#crystalBox').fadeOut('slow');
+			$('#generalBox').fadeIn('slow');
+		})
+		
+		$('#crystalButton').click(function(){
+			$('#generalBox').fadeOut('slow');
+			$('#crystalBox').fadeIn('slow');
+		})
+	</script>
 
 </body>
 
